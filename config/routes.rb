@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resource :pages
+  resources :pages
+  resources :home
+  resources :resume
 
   resources :users do
     resources :comments
