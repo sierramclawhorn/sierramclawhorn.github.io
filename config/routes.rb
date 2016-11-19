@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
+  resource :pages
 
   resources :users do
     resources :comments
   end
 
-  root 'resume'
+  root 'pages#index'
 end
