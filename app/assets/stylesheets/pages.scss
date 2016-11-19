@@ -13,7 +13,7 @@ $primary-color: #333;
 // INDEX
 
 .container {
-  border: solid 1px $primary-color;
+  //border: solid 2px maroon;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -37,6 +37,9 @@ $primary-color: #333;
 
 }
 
+.name-img {
+  max-width: 80%;
+}
 
 
 
