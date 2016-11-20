@@ -1,4 +1,5 @@
 .contacts-container {
+  position: relative;
   margin: auto;
   width: 70vw;
   min-width: 380px;
@@ -14,10 +15,11 @@
 
 
 .contacts-nav {
-  clear: both;
-  position: fixed;
-  left: 40vw;
-  top: 68vh;
+  position: absolute;
+  z-index: 1;
+  left: 22vw;
+  top: 63vh;
+
   cursor: pointer;
   text-align: center;
   width: 8%;
@@ -27,7 +29,7 @@
   color: maroon;
   font-family: 'ltc-bodoni-175';
   cursor: pointer;
-  font-size: 3em;
+  font-size: 300%;
 }
 
 .contact {

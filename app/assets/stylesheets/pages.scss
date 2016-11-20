@@ -1,16 +1,8 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-
 // STYLE VARS:
 $font-stack:    'ltc-bodoni-175-it', sans-serif;
 $primary-color: #333;
 
 
-
-
-// INDEX
 
 .potato {
   width: 300%;
@@ -33,7 +25,11 @@ div .aniPotato {
 
 .header-box {
   border: solid 2.5px black;
-  background-color: #94223d;
+  background: #94223d; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #94223d, blue); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #94223d, blue); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #94223d, blue); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #94223d, blue); /* Standard syntax */
   border-radius: 50%;
   position: absolute;
   top: 0;
@@ -54,8 +50,6 @@ div .aniPotato {
   text-align: center;
   font-family: $font-stack;
   font-size: 4vw;
-  text-shadow: 2px 1px 1px silver;
-
 }
 
 .name-img {
