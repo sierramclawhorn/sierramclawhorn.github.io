@@ -12,7 +12,26 @@ $primary-color: #333;
 
 // INDEX
 
-.container {
+.potato {
+  width: 300%;
+}
+
+div .aniPotato {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+.header-box {
   border: solid 2.5px black;
   background-color: #94223d;
   border-radius: 50%;
