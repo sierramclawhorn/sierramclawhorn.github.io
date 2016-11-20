@@ -1,8 +1,10 @@
-.container {
+.contacts-container {
+  margin: auto;
+  width: 70vw;
+  min-width: 380px;
   border: dotted 1px darkred;
   border-radius: 50%;
   border-style: none solid none solid; 
-
   background: #99C1D6; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left top, #99C1D6, white); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(bottom right, #99C1D6, white); /* For Opera 11.1 to 12.0 */
@@ -11,15 +13,21 @@
 }
 
 
-.home {
+.contacts-nav {
+  clear: both;
   position: fixed;
   left: 40vw;
-  top: 76vh;
-  background-color: black;
+  top: 68vh;
   cursor: pointer;
   text-align: center;
-  font-size: 2em;
   width: 8%;
+}
+
+.home-link {
+  color: maroon;
+  font-family: 'ltc-bodoni-175';
+  cursor: pointer;
+  font-size: 3em;
 }
 
 .contact {
