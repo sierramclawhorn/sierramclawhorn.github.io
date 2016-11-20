@@ -1,3 +1,103 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.nav {
+  text-align: center;
+}
+
+.aniBox {
+  margin: .2%;
+  display: inline-block;
+  height: 5vh;
+  background: darkred;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 8em;
+  line-height: 8em;
+  text-align: center;
+  transition-property: background, border-radius;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  width: 95px;
+}
+.blue:hover {
+  background: #33CEFF;
+  border-radius: 50%;
+}
+.orange:hover {
+  background: #ff7b29;
+  border-radius: 50%;
+}
+.green:hover {
+  background: #76D82D;
+  border-radius: 50%;
+}
+
+   
+a {
+  font-family: Lato;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
+div .aniBoat {
+  position: absolute;
+  bottom: .1vh;
+  left: 80%;
+}
+
+.boat {
+  width: 200px;
+  animation-name: slideRight;
+    -webkit-animation-name: slideRight; 
+  
+    animation-duration: 2s; 
+    -webkit-animation-duration: 2s;
+  
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;   
+  
+    visibility: visible !important; 
+}
+  
+@keyframes slideRight {
+  0% {
+    transform: translateX(-150%);
+  }
+  50%{
+    transform: translateX(8%);
+  }
+  65%{
+      transform: translateX(-4%);
+  }
+  80%{
+    transform: translateX(4%);
+  }
+  95%{
+    transform: translateX(-2%);
+  }     
+  100% {
+    transform: translateX(0%);
+  } 
+}
+@-webkit-keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(-150%);
+  }
+  50%{
+    -webkit-transform: translateX(8%);
+  }
+  65%{
+    -webkit-transform: translateX(-4%);
+  }
+  80%{
+    -webkit-transform: translateX(4%);
+  }
+  95%{
+    -webkit-transform: translateX(-2%);
+  }     
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
