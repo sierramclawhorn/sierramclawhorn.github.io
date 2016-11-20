@@ -1,3 +1,128 @@
-// Place all the styles related to the film controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.film-container {
+  width: 70vw;
+  margin: auto;
+}
+
+.experience {
+  padding-bottom: 3%;
+}
+
+.film-container h2 {
+  font-family: "Lato";
+  font-size: 88%;
+  font-weight: bold;
+}
+
+.film-container p, table, li {
+  font-family: "Lato";
+  font-size: 86%;
+}
+
+.film-container li {
+  line-height: 140%;
+}
+
+.film-container table {
+  font-family: Avenir Next;
+  font-weight: lighter;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 83%;
+  margin-bottom: 4%;
+}
+
+.film-container table, th, td {
+    border: .5px solid gray;
+}
+
+.film-container th {
+  height: 35px;
+  text-align: center;
+  font-family: "Lato";
+}
+
+.film-container th, td {
+  padding: 2px;
+}
+
+.film-container td {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 6px;
+  font-size: 95%;
+}
+
+.film-container td {
+  padding: 6px;
+}
+
+.skills {
+  padding-bottom: 3%;
+  margin-left: 1%;
+}
+
+.skillcont {
+  word-spacing: 2px;
+  padding-left: 5%;
+  margin-top: -10px;
+  font-size: 85%;
+}
+
+.skillcont span {
+  letter-spacing: 1em;
+}
+
+#edusub {
+  padding-left: 3%;
+  margin-top: -2%;
+  font-size: 90%;
+  font-style: italic;
+  letter-spacing: 0px;
+}
+
+.education {
+  padding-bottom: 3%;
+  margin-left: 2%;
+  letter-spacing: 1px;
+}
+
+.film-container footer {
+  margin-bottom: 10%;
+}
+
+#button {
+  margin-top: 2%;
+  text-align: center;
+  font-family: "ltc-bodoni-175";
+  letter-spacing: 2px;
+  font-weight: bold;
+  background-color: white;
+  border: .1px solid gray;
+  color: maroon;
+  border-radius: 50%;
+  padding: 2%;
+  width: 18%;
+}
+
+#button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+#button:hover {
+    background-color: #e7e7e7;
+    color: gray;
+}
+
+.film-container a { 
+  color: #b784a7;
+  text-decoration: none; 
+}
+
+.film-container a:hover {
+  color: maroon;
+}
+
+.film-container a:visited {
+  color: maroon;
+}
