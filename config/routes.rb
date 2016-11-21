@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :contacts
   resources :film
   resources :code
+  resources :comments
 
   root 'pages#index'
 end
