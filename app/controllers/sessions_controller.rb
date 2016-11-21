@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
         format.html { redirect_to '/' }
       end
     else
-      flash.now[:error] = 'Invalid user, brah!'
+      flash.now[:error] = 'Who even are you?'
       respond_to do |format|
         format.html { render 'new' }
         format.js
