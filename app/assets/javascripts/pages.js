@@ -1,10 +1,7 @@
-var aniPotato = function($aniPotato,speed){
-    $aniPotato.animate({
-        "left": "110%"
-    }, speed);
-};
-
-$(function(){
-    aniPotato($(".aniPotato"), 9000);
+$(document).on('turbolinks:load', function() {
+  aniName();
 });
 
+var aniName = function() {
+  $('.name-img').addClass('animated zoomInDown');
+};

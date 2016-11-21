@@ -3,7 +3,6 @@ $font-stack:    'ltc-bodoni-175-it', sans-serif;
 $primary-color: #333;
 
 
-
 .potato {
   width: 300%;
 }
@@ -14,13 +13,39 @@ div .aniPotato {
     left: 0;
     width: 40px;
     height: 40px;
-    -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
+
+    -webkit-animation: moveX 6s linear 0s infinite alternate;
+    -moz-animation: moveX 6s linear 0s infinite alternate;
+    -o-animation: moveX 6s linear 0s infinite alternate;
+    animation: moveX 6s linear 0s infinite alternate,
+               moveY 3.4s linear 0s infinite alternate;
 }
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@-webkit-keyframes moveX {
+  from { left: 0; } to { left: 102%; }
+}
+@-moz-keyframes moveX {
+  from { left: 0; } to { left: 102%; }
+}
+@-o-keyframes moveX {
+  from { left: 0; } to { left: 102%; }
+}
+@keyframes moveX {
+  from { left: 0; } to { left: 102%; }
+}
+@-webkit-keyframes moveY {
+  from { top: 0; } to { top: 100%; }
+}
+@-moz-keyframes moveY {
+  from { top: 0; } to { top: 100%; }
+}
+@-o-keyframes moveY {
+  from { top: 0; } to { top: 100%; }
+}
+@keyframes moveY {
+  from { top: 0; } to { top: 100%; }
+}
+
+
 
 
 .header-box {
