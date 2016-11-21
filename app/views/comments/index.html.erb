@@ -1,0 +1,15 @@
+<div class= 'comments-container'>
+
+  <div class= 'new-comment'>
+    <%= render 'form' %>
+  </div>
+  
+  <% @comments.each do |comment| %>
+    <div class= 'comment'>
+      <p><%= comment.comment %></p><br>
+      <p class= 'signature'>Love,<br>
+      <%= comment.user.capitalize %></p>
+    </div>
+  <% end %>
+
+</div>
