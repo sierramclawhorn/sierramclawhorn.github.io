@@ -9,7 +9,12 @@
       <div class= 'comment'>
         <p><%= comment.comment %></p><br>
         <p class= 'signature'>Love,<br>
-        <%= comment.user.capitalize %></p>
+        <% if comment.user == '' %>
+          <%= p 'Your Secret Admirer' %>
+        <% else %>
+          <%= comment.user.capitalize %>
+        <% end %>
+        </p>
       </div>
     <% end %>
   </div>
