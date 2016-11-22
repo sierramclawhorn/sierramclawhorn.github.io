@@ -1,15 +1,17 @@
 <div class= 'comments-container'>
 
   <div class= 'new-comment'>
-    <%= render 'form' %>
+    <%= link_to 'Leave a Note', new_comment_path, remote: true %>
   </div>
   
-  <% @comments.each do |comment| %>
-    <div class= 'comment'>
-      <p><%= comment.comment %></p><br>
-      <p class= 'signature'>Love,<br>
-      <%= comment.user.capitalize %></p>
-    </div>
-  <% end %>
+  <div class= 'comments-list'>
+    <% @comments.each do |comment| %>
+      <div class= 'comment'>
+        <p><%= comment.comment %></p><br>
+        <p class= 'signature'>Love,<br>
+        <%= comment.user.capitalize %></p>
+      </div>
+    <% end %>
+  </div>
 
 </div>

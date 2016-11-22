@@ -7,6 +7,11 @@ class CommentsController < ApplicationController
   def create
     @comment = Comment.new(comment_params)
 
+    respond_to do |f|
+      f.html { redirect_to comments_path }
+      f.js
+    end
+
     if @comment.save
       redirect_to comments_path
     else

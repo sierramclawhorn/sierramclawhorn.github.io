@@ -1,7 +1,7 @@
-<%=  form_for :comment, url: '/comments' do |f| %>
+<%=  form_for :comment, url: '/comments', remote: true do |f| %>
 
   <%= f.text_field :comment, placeholder: 'Message:', class: 'msg-field' %><br>
   <%= f.text_field :user, placeholder: 'From:', class: 'name-field' %><br>
-  <%= submit_tag 'leave a note' %>
+  <%= submit_tag 'leave a note', class: 'comment-submit' %>
 
 <% end %>

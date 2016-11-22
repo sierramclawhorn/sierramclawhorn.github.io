@@ -1,12 +1,8 @@
 .comments-container {
   width: 75%;
   margin: auto;
-  margin-top: 5%;
-  margin-top: 5%;
-}
-
-.new-comment {
-  
+  margin-top: 3%;
+  margin-bottom: 5%;
 }
 
 .msg-field {
@@ -19,14 +15,29 @@
   width: 50vw;
 }
 
+.new-comment {
+  text-align: center;
+}
+
+.new-comment a {
+  color: maroon;
+  font-weight: bold;
+  font-family: ltc-bodoni-175;
+  font-size: 2em;
+}
+
+.comments-list {
+  margin-top: 5%;
+  height: 50vh;
+  overflow: auto;
+}
 
 .comment {
-  width: 50%;
   margin: auto;
+  width: 50%;
   border: solid 1px maroon;
   border-radius: 50%;
   border-style: none dotted none dotted; 
-  margin: 1%;
   padding: 8%;
 }
 
