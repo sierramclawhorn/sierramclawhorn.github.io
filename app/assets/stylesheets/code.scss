@@ -10,9 +10,8 @@
 }
 
 
-
-
 .aniComputer {
+  margin: auto;
   background-image: url('/images/macbook.png');
   background-size: 50%;
   background-repeat: no-repeat;
@@ -63,10 +62,6 @@
   90% { -webkit-transform: translateY(0%) scaleX(1.02); } 
   100% { -webkit-transform: translateY(0%) scaleX(1); }
 }
-
-
-
-
 
 
 .experience {
