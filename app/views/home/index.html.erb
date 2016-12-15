@@ -1,25 +1,13 @@
 <div class= 'home-container'>
 
-  <div class= 'home-nav'>
-    <div class= 'aniBox blue'>
-      <%= link_to 'Film', film_index_url %>  
-    </div>
-    <div class= 'aniBox orange'>
-      <%= link_to 'Code', code_index_url %>
-    </div>
-    <div class= 'aniBox green'>
-      <%= link_to 'Contact', contacts_url %> 
-    </div>
-
-  </div>
-
-
   <div class= 'body'>
 
     <%= render 'about' %>
 
     <div class="linkedInfo">
       <%= render 'potato' %>
+      <%= render 'film' %>
+      <%= render 'code' %>
     </div>
 
   </div>

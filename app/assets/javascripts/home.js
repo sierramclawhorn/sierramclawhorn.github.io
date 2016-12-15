@@ -21,8 +21,17 @@ document.addEventListener("turbolinks:load", function() {
   });
 
   $(".filmTxt").mouseover(function() {
-    $(".potato").toggle();
+    $(".film-container").toggle();
+  });
+  $(".filmTxt").mouseleave(function() {   //HIDE NAV INSTEAD OF MOUSELEAVE
+    $(".film-container").toggle();  
   });
 
+  $(".codeTxt").mouseover(function() {
+    $(".code-container").toggle();
+  });
+  $(".codeTxt").mouseleave(function() {   //HIDE NAV INSTEAD OF MOUSELEAVE
+    $(".code-container").toggle();  
+  });
 
 });
