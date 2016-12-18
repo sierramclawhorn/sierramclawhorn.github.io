@@ -6,6 +6,9 @@ document.addEventListener("turbolinks:load", function() {
   $('.harlotSVG').mouseleave(function() {
     $('path').attr("stroke", "black");
   });
+  $('.harlotSVG').click(function() {
+    $('.aboutInfoSVG').toggle();
+  });
 
 
   $(".harlotContainer").on("click", function() {
@@ -13,7 +16,7 @@ document.addEventListener("turbolinks:load", function() {
     $(".aboutInfoSVG").attr("display", "initial");
   });
 
-  $(".typewriterTxt").mouseover(function() {
+  $(".typewriterTxt").click(function() {
     // $(".aboutInfoSVG").toggle();
     // $(".type").toggle();
     // INSERT TYPE THING!
@@ -27,18 +30,24 @@ document.addEventListener("turbolinks:load", function() {
   });
 
   $(".filmTxt").mouseover(function() {
+    $(".aboutInfoSVG").css("display", "none");
+    $(".linkedInfo").css("display", "inline-block");
     $(".code-container").css("display", "none");
     $(".contact").css("display", "none");
     $(".film-container").toggle();
   });
 
   $(".codeTxt").mouseover(function() {
+    $(".aboutInfoSVG").css("display", "none");
+    $(".linkedInfo").css("display", "inline-block");
     $(".film-container").css("display", "none");
     $(".contact").css("display", "none");
     $(".code-container").toggle();
   });
 
   $(".contactTxt").mouseover(function() {
+    $(".aboutInfoSVG").css("display", "none");
+    $(".linkedInfo").css("display", "inline-block");
     $(".film-container").css("display", "none");
     $(".code-container").css("display", "none");
     $(".contact").toggle();
