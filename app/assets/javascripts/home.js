@@ -21,36 +21,66 @@ document.addEventListener("turbolinks:load", function() {
     // $(".type").toggle();
     // INSERT TYPE THING!
   });
+  $(".typewriterTxt").mouseover(function() {
+    $(this).attr("fill", "maroon")
+  });
+  $(".typewriterTxt").mouseleave(function() {
+    $(this).attr("fill", "initial")
+  });
+
 
   $(".potatoTxt").mouseover(function() {
+    $(this).attr("fill", "maroon")
     $(".potato").toggle();
   });
   $(".potatoTxt").mouseleave(function() {
+    $(this).attr("fill", "initial")
     $(".potato").toggle();
   });
 
-  $(".filmTxt").mouseover(function() {
+
+  $(".filmTxt").click(function() {
     $(".aboutInfoSVG").css("display", "none");
     $(".linkedInfo").css("display", "inline-block");
     $(".code-container").css("display", "none");
     $(".contact").css("display", "none");
     $(".film-container").toggle();
   });
+  $(".filmTxt").mouseover(function() {
+    $(this).attr("fill", "maroon")
+  });
+  $(".filmTxt").mouseleave(function() {
+    $(this).attr("fill", "initial")
+  });
 
-  $(".codeTxt").mouseover(function() {
+
+  $(".codeTxt").click(function() {
     $(".aboutInfoSVG").css("display", "none");
     $(".linkedInfo").css("display", "inline-block");
     $(".film-container").css("display", "none");
     $(".contact").css("display", "none");
     $(".code-container").toggle();
   });
+  $(".codeTxt").mouseover(function() {
+    $(this).attr("fill", "maroon")
+  });
+  $(".codeTxt").mouseleave(function() {
+    $(this).attr("fill", "initial")
+  });
 
-  $(".contactTxt").mouseover(function() {
+
+  $(".contactTxt").click(function() {
     $(".aboutInfoSVG").css("display", "none");
     $(".linkedInfo").css("display", "inline-block");
     $(".film-container").css("display", "none");
     $(".code-container").css("display", "none");
     $(".contact").toggle();
+  });
+  $(".contactTxt").mouseover(function() {
+    $(this).attr("fill", "maroon")
+  });
+  $(".contactTxt").mouseleave(function() {
+    $(this).attr("fill", "initial")
   });
 
 });
