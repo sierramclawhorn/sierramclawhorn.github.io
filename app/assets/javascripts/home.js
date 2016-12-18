@@ -1,10 +1,16 @@
 document.addEventListener("turbolinks:load", function() {
-  $(".harlotSVG").mouseenter(function() {
+
+  $('.harlotSVG').mouseover(function() {
     $('path').attr("stroke", "maroon");
-    $(".aboutInfoSVG").attr("display", "initial");
   });
-  $(".harlotSVG").mouseleave(function() {
+  $('.harlotSVG').mouseleave(function() {
     $('path').attr("stroke", "black");
+  });
+
+
+  $(".harlotContainer").on("click", function() {
+    $('.harlotContainer').css("display", "inline-block");
+    $(".aboutInfoSVG").attr("display", "initial");
   });
 
   $(".typewriterTxt").mouseover(function() {
@@ -21,17 +27,21 @@ document.addEventListener("turbolinks:load", function() {
   });
 
   $(".filmTxt").mouseover(function() {
+    $(".code-container").css("display", "none");
+    $(".contact").css("display", "none");
     $(".film-container").toggle();
-  });
-  $(".filmTxt").mouseleave(function() {   //HIDE NAV INSTEAD OF MOUSELEAVE
-    $(".film-container").toggle();  
   });
 
   $(".codeTxt").mouseover(function() {
+    $(".film-container").css("display", "none");
+    $(".contact").css("display", "none");
     $(".code-container").toggle();
   });
-  $(".codeTxt").mouseleave(function() {   //HIDE NAV INSTEAD OF MOUSELEAVE
-    $(".code-container").toggle();  
+
+  $(".contactTxt").mouseover(function() {
+    $(".film-container").css("display", "none");
+    $(".code-container").css("display", "none");
+    $(".contact").toggle();
   });
 
 });

@@ -51,11 +51,19 @@ a {
   text-align: justify;
   margin-top: 8%;
   font-size: 1.3em;
+  text-align: center;
 
 
 }
 
 
-.harlotContainer, .infoAboutContainer {
+.harlotContainer {
+  margin: auto;
+  max-width: 60%;
+  display: block;
+}
+
+.infoAboutContainer {
+  margin: auto;
   display: inline-block;
 }
